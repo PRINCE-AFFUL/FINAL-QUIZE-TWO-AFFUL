@@ -142,16 +142,15 @@ border-top-left-radius: 10px;
     padding-right: 10%;
     padding-top: 5%;
 }
-.startup_1{
-    /* background-color: rgb(75, 75, 75); */
-    width: 5%;
-    border-radius: 10px;
-}
+ .first_set{
+   display: flex;
+   gap: 10%;
+} 
 .startups{
     display: flex;
     flex-direction: row;
-    gap: 20%;
-}
+    justify-content: space-around;
+} 
 .last_box{
     width: 100%;
     height: 120rem;
@@ -253,7 +252,13 @@ border-top-left-radius: 10px;
     gap: 2rem;
     padding-right: 5%;
 }
-
+.first-btn{
+    width: 10%;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
 
 
 
@@ -282,32 +287,52 @@ border-top-left-radius: 10px;
     body{
       background-color: bisque;
     }
-ul{
-    display: none;
-}
-.social_media{
-    display: grid;
-}
-.FIRST_IMAGE{
-    display: none;
-}
-
-.get_started{
-    width: 35%;
-    height: 2.5rem;
-}
-.white_rectangle{
-    width: 80%;
-}
-.white_box{
-    background-image: none;
-}
-.startups{
-   
-}
-.startup_1{
-    width: 100%;
-}
+    ul{
+        display: none;
+    }
+    .social_media{
+        display: grid;
+    }
+    .FIRST_IMAGE{
+        display: none;
+    }
+    
+    .get_started{
+        width: 35%;
+        height: 2.5rem;
+    }
+    .white_rectangle{
+        width: 80%;
+    }
+    .first_chat{
+        
+       
+    }
+    .startups{
+        display: grid;
+        gap: 2rem;
+    }
+    .chat_2{
+       
+    }
+    .middle_cards{
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+    }
+    .last_footer{
+        display: grid;
+    }
+    .right{
+     display: flex;
+     flex-direction: column;
+    }
+    .btn{
+        width: 30%;
+    }
+    .first-btn{
+        width: 50%;
+    }
   }
   
   
@@ -318,8 +343,52 @@ ul{
     body{
     background-color: aqua;
     }
-
-
+    ul{
+        display: none;
+    }
+    .social_media{
+        display: grid;
+    }
+    .FIRST_IMAGE{
+        display: none;
+    }
+    
+    .get_started{
+        width: 35%;
+        height: 2.5rem;
+    }
+    .white_rectangle{
+        width: 80%;
+    }
+    .first_chat{
+        
+       
+    }
+    .chat_2{
+       
+    }
+    .middle_cards{
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+    }
+    .last_footer{
+        display: grid;
+    }
+    .right{
+     display: flex;
+     flex-direction: column;
+    }
+    .btn{
+        width: 30%;
+    }
+    .first-btn{
+        width: 50%;
+    }
+    .startups{
+        display: flex;
+        gap: 5%;
+    }
   }
   
   
@@ -330,8 +399,52 @@ ul{
     body{
       background-color: chartreuse;
     }
-
-  
+    ul{
+        display: none;
+    }
+    .social_media{
+        display: grid;
+    }
+    .FIRST_IMAGE{
+        display: none;
+    }
+    
+    .get_started{
+        width: 35%;
+        height: 2.5rem;
+    }
+    .white_rectangle{
+        width: 80%;
+    }
+    .first_chat{
+        
+       
+    }
+    .chat_2{
+       
+    }
+    .middle_cards{
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+    }
+    .last_footer{
+        display: grid;
+    }
+    .right{
+     display: flex;
+     flex-direction: column;
+    }
+    .btn{
+        width: 30%;
+    }
+    .first-btn{
+        width: 50%;
+    }
+    .startups{
+        display: flex;
+        gap: 7%;
+    }
   }
   
   
@@ -344,7 +457,52 @@ ul{
     body{
     background-color: chocolate;
     }
-  
+    ul{
+        display: none;
+    }
+    .social_media{
+        display: grid;
+    }
+    .FIRST_IMAGE{
+        display: none;
+    }
+    
+    .get_started{
+        width: 35%;
+        height: 2.5rem;
+    }
+    .white_rectangle{
+        width: 80%;
+    }
+    .first_chat{
+        
+       
+    }
+    .chat_2{
+       
+    }
+    .middle_cards{
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+    }
+    .last_footer{
+        display: grid;
+    }
+    .right{
+     display: flex;
+     flex-direction: column;
+    }
+    .btn{
+        width: 30%;
+    }
+    .first-btn{
+        width: 50%;
+    }
+    .startups{
+        display: flex;
+        gap: 7%;
+    }
 
   }
   
@@ -356,7 +514,10 @@ ul{
     body{
   background-color: cornflowerblue;
     }
-
+    .startups{
+        display: flex;
+        gap: 6.5%;
+    }
   }
   
   
@@ -367,5 +528,8 @@ ul{
     body{
      background-color: darkcyan;
     }
-
+    .startups{
+        display: flex;
+        gap: 6.5%;
+    }
   }

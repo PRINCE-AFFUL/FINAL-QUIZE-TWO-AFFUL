@@ -41,15 +41,18 @@ a{
     width: 10rem;
     font-size: 25px;
     border-radius: 10px;
+    text-align: center;
 }
 .fashion{
     color: black;
+    display: flex;
+    justify-content: space-between;
 }
 .container{
     display: flex;
     justify-content: space-around;
     place-items: center;
-    background-color: rgb(207, 233, 241);
+    background-color: rgba(207, 233, 241, 0.618);
     width: 90%; 
     margin-left: 5rem;
     border-radius: 15px;
@@ -126,7 +129,31 @@ a{
 .yellow_container{
 display: flex;
 justify-content: space-around;
-background-color: rgba(241, 219, 94, 0.959);
+width: 100%;
+background: linear-gradient(
+        1.32deg,
+        #e0c340 0.13%,
+        #dfc23e 0.13%,
+        #e1c441  7.2%, 
+        #e3c743 10.13%,
+        #e4c542 12.98%,
+        #e6c744 15.99%,
+        #e7c845 19.52%,
+        #e5c643 23.96%,
+        #e6c945 30.43%,
+        #e3c743 36.49%, 
+        #e9ca48  42.49%,  
+        #edce49 49.35%,
+        #f0d44c 55.42%,
+        #f4d84f 61.43%,
+        #f6da54 65.74%,
+        #f7db53 72.23%,
+        #f9dd55 77.43%,
+        #f9df56 83.84%, 
+        #fae157  91.52%,  
+        #f9df56 97.87%
+
+    );  
 
 }
 .payday{
@@ -139,6 +166,7 @@ background-color: rgba(241, 219, 94, 0.959);
 }
 .pic{
     height: 35rem;
+    
 }
 .young{
     font-size: 30px;
@@ -193,8 +221,8 @@ background-color: rgba(241, 219, 94, 0.959);
 .logo_1{
     width: 20rem;
     height: 15rem;
-  margin-left: 10rem;
-   margin-top: -9rem;
+   margin-left: 10rem;
+    margin-top: -4rem;  
 }
 .logo_2{
     width: 10rem;
@@ -203,9 +231,34 @@ background-color: rgba(241, 219, 94, 0.959);
 }
 .first_footer{
     text-align: center;
-    background-color: goldenrod;
+    padding-bottom: 2%;
     width: 100%;
     height: 50%;
+
+    background: linear-gradient(
+        1.32deg,
+        #e0c340 0.13%,
+        #dfc23e 0.13%,
+        #e1c441  7.2%, 
+        #e3c743 10.13%,
+        #e4c542 12.98%,
+        #e6c744 15.99%,
+        #e7c845 19.52%,
+        #e5c643 23.96%,
+        #e6c945 30.43%,
+        #e3c743 36.49%, 
+        #e9ca48  42.49%,  
+        #edce49 49.35%,
+        #f0d44c 55.42%,
+        #f4d84f 61.43%,
+        #f6da54 65.74%,
+        #f7db53 72.23%,
+        #f9dd55 77.43%,
+        #f9df56 83.84%, 
+        #fae157  91.52%,  
+        #f9df56 97.87%
+
+    );  
 }
 .join{
     padding-top: 5rem;
@@ -253,6 +306,7 @@ background-color: rgba(241, 219, 94, 0.959);
     color: white;
     display: flex;
     justify-content: space-between;
+    padding-left: 5%;
   }
   .social_media{
     display: flex;
@@ -295,6 +349,74 @@ background-color: rgba(241, 219, 94, 0.959);
     justify-content: space-around;
     gap: 10rem;
 }
+#hamburger{
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Navigation menu styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* .element_1{
+    padding-left: 5%;
+  } */
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -305,10 +427,37 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (max-width: 480px) {
     /* styles for small mobile devices */
     body{
-      background-color: bisque;
+ position: relative;
+ width: 100%;
+ background-color: bisque;
+    }
+    #hamburger{
+        display: block;
+        z-index: 99999;
+    }
+    .fashion{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
     }
     .pages{
-        display: none;
+        position: fixed;
+        top: 0;
+        left: -1000px;
+        height: 100%;
+        width: 100%;
+        background-color: #e3c743;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        font-size: 20px;
+        transition: 200ms ease-in-out;
+    }
+     .active{
+left: 0;
     }
     .fashion_image{
         margin-left: -15%;
@@ -384,7 +533,38 @@ background-color: rgba(241, 219, 94, 0.959);
     .element_1{
         display: grid;
     }
-  }
+
+
+
+
+    .hamburger {
+        display: block;
+      }
+      
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+      
+      .nav-links li {
+        margin-bottom: 10px;
+      }
+      
+      .nav-links a {
+        display: block;
+      }
+      #hamburger{
+        margin-top: 7%;
+        
+      }
+    }
+    
+  
   
   
   /* - Medium (481px - 640px): */
@@ -392,7 +572,39 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (min-width: 481px) and (max-width: 640px) {
     /* styles for medium mobile devices */
     body{
-    background-color: aqua;
+   background-color: lightgoldenrodyellow;
+    }
+    #hamburger{
+        margin-top: 7%;
+        
+      }
+      #hamburger{
+        display: block;
+        z-index: 99999;
+    }
+    .pages{
+        position: fixed;
+        top: 0;
+        left: -1000px;
+        height: 100%;
+        width: 100%;
+        background-color: #e3c743;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        font-size: 20px;
+        transition: 200ms ease-in-out;
+    }
+     .active{
+left: 0;
+    }
+    .fashion{
+  display: flex;
+  justify-content: space-between;
+  
     }
     .pages{
         display: none;
@@ -484,7 +696,39 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (min-width: 641px) and (max-width: 768px) {
     /* styles for large mobile devices */
     body{
-      background-color: chartreuse;
+     background-color: pink;
+    }
+    #hamburger{
+        margin-top: 7%;
+        
+      }
+      #hamburger{
+        display: block;
+        z-index: 99999;
+    }
+    .pages{
+        position: fixed;
+        top: 0;
+        left: -1000px;
+        height: 100%;
+        width: 100%;
+        background-color: #e3c743;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        font-size: 20px;
+        transition: 200ms ease-in-out;
+    }
+     .active{
+left: 0;
+    }
+    .fashion{
+  display: flex;
+  justify-content: space-between;
+  
     }
     .pages{
         display: none;
@@ -578,7 +822,7 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (min-width: 769px) and (max-width: 960px) {
     /* styles for small tablets */
     body{
-    background-color: chocolate;
+   
     }
     .pages{
         display: none;
@@ -659,7 +903,7 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (min-width: 961px) and (max-width: 1024px) {
     /* styles for medium tablets */
     body{
-  background-color: cornflowerblue;
+
     }
     .container{
         margin-left: 3rem;
@@ -688,7 +932,7 @@ background-color: rgba(241, 219, 94, 0.959);
   @media (min-width: 1025px) and (max-width: 1280px) {
     /* styles for large tablets */
     body{
-     background-color: darkcyan;
+     
     }
     .container{
         margin-left: 4rem;
@@ -710,7 +954,7 @@ margin-left: 5%;
    @media (min-width: 1281px) and (max-width: 1440px) {
     /* styles for small desktops */
     body{
-    background-color: darkgoldenrod;
+   
     }
   
   }
